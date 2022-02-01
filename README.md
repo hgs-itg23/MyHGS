@@ -14,7 +14,7 @@ Packagename : de.hgs.itg23.MyHGS
 [BjoernM03](https://github.com/BjoernM03) = Björn Misamer
 
 # Schedule
-From 01.02.2022 till 28.06.2022
+Starting at the 01.02.2022 ending at the 28.06.2022
 
 # Supervisor
 [smartin-singen](https://github.com/smartin-singen) = Stefan Martin
