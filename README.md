@@ -19,10 +19,10 @@ We are coding the Website in `HTML` and `Java`
 The Documentation will be written in `Markdown`
 
 # Programms we use for Coding
-## Java 
+#### Java 
 -IntelIJ
 -Eclipse
-## HTML and Markdown
+#### HTML and Markdown
 -Visual Studio Code (along with the addons: Live Server, All in one Markdown)
 
 # Developers:
