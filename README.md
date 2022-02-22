@@ -34,5 +34,5 @@ The Documentation will be written in `Markdown`
 Starting at the 01.02.2022 ending at the 28.06.2022
 
 # Supervisor
-[smartin-singen](https://github.com/smartin-singen) = Stefan Martin
+[smartin-singen](https://github.com/smartin-singen) = Stefan Martin //
                                                       Stephan Schrittmatter
