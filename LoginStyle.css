@@ -1,8 +1,8 @@
 html, body{
     height: 100vh;
-    background: #1c2833;
+    background: #3f4f5f;
     align-items: center;
-    color: #f0f3f4;
+    color: #ffffff;
     font-family: Fira Code;
   }
   
@@ -11,7 +11,7 @@ html, body{
     display: center;
     margin: 20px 0;
     padding: 8px;
-    background: #127dcf;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     border-radius: 2px;
     transition: all 0.3s ease-out;
     text-align-last: center;
@@ -19,6 +19,10 @@ html, body{
   
   h1:hover {
     background: #114169;
+  }
+
+  div {
+    text-align: center;
   }
   
   h3 {
@@ -28,8 +32,21 @@ html, body{
     padding: 8px;
     background: #75bcf1;
     border-radius: 8px;
-    transition: all 0.3s ease-out;
+    transition: all 1s ease-out;
   }
+
+  input {
+    padding: 0;
+    height: 30px;
+    position: relative;
+    left: 1;
+    outline: none;
+    border: 1px solid #c50f0f;
+    border-color: #75bcf1;
+    background-color: #052035;
+    font-size: 16px;
+}
+
   
   h3:hover {
     background: #3c95dd;
@@ -45,28 +62,10 @@ html, body{
   
   a {
     font-family: Fira Code;
-    color: #000000;
+    color: #ffffff;
   }
   
-  .Farbe {
-    margin-top: 0px;
-    margin-bottom: 50px;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 3rem;
-    letter-spacing: 0.15rem;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: -2px 2px #ef3550,
-                 -4px 4px #f48fb1,
-                 -6px 6px #7e57c2,
-                 -8px 8px #2196f3,
-                 -10px 10px #26c6da,
-                 -12px 12px #43a047,
-                 -14px 14px #eeff41,
-                 -16px 16px #f9a825,
-                 -18px 18px #ff5722;
-  }
+
   
   .green {
     color:  #2ecc71;
@@ -99,12 +98,74 @@ html, body{
     
     
   }
+
+  
   
   ::placeholder {
-    color:rgb(11, 11, 212);
+    color:rgb(255, 255, 255);
     opacity:1;
     transition: opacity 1s;
   }
+  
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
   
   :focus::placeholder { opacity:0  }
 
