@@ -1,9 +1,4 @@
-import login.html
- 
-
- 
-
-        function register(){ 
+        function register(event){ 
 
             event.preventDefault(); 
 
@@ -79,7 +74,7 @@ import login.html
 
         } 
 
-        function login(){ 
+        function login(event){ 
 
             event.preventDefault(); 
 
