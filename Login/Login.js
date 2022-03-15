@@ -1,9 +1,4 @@
-import login.html
- 
-
- 
-
-        function register(){ 
+        function register(event){ 
 
             event.preventDefault(); 
 
@@ -79,7 +74,7 @@ import login.html
 
         } 
 
-        function login(){ 
+        function login(event){ 
 
             event.preventDefault(); 
 
@@ -145,7 +140,7 @@ import login.html
 
         } 
 
-        function forgot(){ 
+        function forgot(event){ 
 
             event.preventDefault(); 
 
@@ -175,4 +170,4 @@ import login.html
 
             document.getElementById("fe").value ="";         
 
-} 
+}
