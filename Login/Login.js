@@ -140,7 +140,7 @@
 
         } 
 
-        function forgot(){ 
+        function forgot(event){ 
 
             event.preventDefault(); 
 
@@ -170,4 +170,4 @@
 
             document.getElementById("fe").value ="";         
 
-} 
+}
