@@ -3,5 +3,5 @@
 - Deadline 29.03.22
 
 # Startseite designen 
-- Eine seite die eine auswahl an tools zeigt soll erstellen werden (Und dem nuter zugeordnet werden)
-- Deadline 05.04.22
+- Eine seite die eine auswahl an tools zeigt soll erstellt werden (Und dem nuter zugeordnet werden)
+- Deadline 12.04.22
