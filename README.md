@@ -20,8 +20,7 @@ The Documentation will be written in `Markdown`
 
 # Programms we use for Coding
 #### Java 
--IntelIJ
--Eclipse
+-Visual Studio Code
 #### HTML and Markdown
 -Visual Studio Code (along with the addons: Live Server, All in one Markdown)
 
