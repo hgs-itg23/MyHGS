@@ -13,8 +13,11 @@
 - Website struktur erstellt [BM] 
     - Miro Projekt anlegen [BM]
     - Design erstellen  [BM]
-    # 09.03.22
+# 09.03.22
     - Loginpage grundstruktur erstellt [BM]
     - js Login datenabgriff gelernt bzw. ausprobiert [MPM]
-    # 13.03.22
+# 13.03.22
     - css hinzugefügt und mehrmals modifiziert [BM]
+# 29.03.22
+- Probleme mit VisualStudio Code lösen [BM]
+- Kalender erstellen [MPM]
