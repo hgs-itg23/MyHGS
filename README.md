@@ -19,10 +19,12 @@ We are coding the Website in `HTML` and `Java`
 The Documentation will be written in `Markdown`
 
 # Programms we use for Coding
-#### Java 
+#### JavaScript
 -Visual Studio Code
 #### HTML and Markdown
 -Visual Studio Code (along with the addons: Live Server, All in one Markdown)
+#### PHP
+-Visual Studio Code
 
 # Developers:
 [SmolBwoi](https://github.com/SmolBwoi) = Michael Miemczyk
