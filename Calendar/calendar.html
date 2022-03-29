@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Calendar</title>
-        <link rel="stylesheet" href="calendar.css" />
-    </head>
-    <body>
-        <div class="main">
-            <div class="left">
-                <div class="themeSwitch">
-                    <img class="switch" />
-                </div>
-                <p class="heading">Calendar</p>
-                <div class="heading-line"></div>
-                <div class="wrapper">
-                    <div class="top">
-                        <p class="backward"></p>
-                        <p class="year-num"></p>
-                        <p class="forward"></p>
-                    </div>
-                    <div class="buttom"></div>
-                </div>
-                <p class="quote">
-                    <label class="lbl-one">
-                        "A dream is not that which you see while sleeping, it is
-                        something that does not let you sleep."
-                    </label>
-                    <label class="lbl-two"> - A.P.J Abdul Kalam </label>
-                </p>
-            </div>
-            <div class="right"></div>
-        </div>
-        <script src="calendar.js"></script>
-    </body>
+<html>
+  <head>
+    <title>Simple Javascript Calendar</title>
+    <link href="calendar.css" rel="stylesheet">
+    <script async src="calendar.js"></script>
+  </head>
+  <body>
+    <div id="cal-wrap">
+      <!-- (A) PERIOD SELECTOR -->
+      <div id="cal-date">
+        <select id="cal-mth"></select>
+        <select id="cal-yr"></select>
+      </div>
+
+      <!-- (B) CALENDAR -->
+      <div id="cal-container"></div>
+
+      <!-- (C) EVENT FORM -->
+      <form id="cal-event">
+        <h1 id="evt-head"></h1>
+        <div id="evt-date"></div>
+        <textarea id="evt-details" required></textarea>
+        <input id="evt-close" type="button" value="Close"/>
+        <input id="evt-del" type="button" value="Delete"/>
+        <input id="evt-save" type="submit" value="Save"/>
+      </form>
+    </div>
+  </body>
 </html>
