@@ -22,3 +22,9 @@
 - Probleme mit VisualStudio Code lösen [BM]
 - Design der Startseite [BM]
 - Kalender erstellen [MPM]
+# 05.04.22
+- Dateien struktur geändert [BM]
+- Kalender design angepasst [BM]
+- Datenbank erweitert [BM]
+- JDBC lernen [MPM]
+- Package erstellen [MPM]
