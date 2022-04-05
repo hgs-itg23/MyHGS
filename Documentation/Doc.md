@@ -20,4 +20,5 @@
     - css hinzugefügt und mehrmals modifiziert [BM]
 # 29.03.22
 - Probleme mit VisualStudio Code lösen [BM]
+- Design der Startseite [BM]
 - Kalender erstellen [MPM]
