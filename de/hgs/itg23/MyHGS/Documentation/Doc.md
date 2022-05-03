@@ -28,3 +28,6 @@
 - Datenbank erweitert [BM]
 - JDBC lernen [MPM]
 - Package erstellen [MPM]
+# 03.05.22
+- PHP Lernen [BM]
+- Java Persistence API lernen [MPM] 
