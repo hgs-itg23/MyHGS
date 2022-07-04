@@ -1,3 +1,7 @@
+/**
+ * @author Bjoern
+ * php kopiert aus dem lernkurs von codecademy 
+ */
 <?php
 require 'vendor/autoload.php';
 # This logic handles connecting to the database, where we store our todo status

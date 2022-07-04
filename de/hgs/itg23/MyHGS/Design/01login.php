@@ -1,3 +1,7 @@
+/**
+ * @author Bjoern
+ * 
+ */
 <?php
 $host = "localhost";
 $name = "test";

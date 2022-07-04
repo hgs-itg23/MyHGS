@@ -1,11 +1,13 @@
-/* (A) ENTIRE PAGE */
+/**
+ * @author Bjoern
+ * Das css hinter dem kalender seite für das wunderschöne design 
+ */
 #cal-wrap * { font-family: arial, sans-serif; }
 .ninja { display: none !important; }
 
-/* (B) CONTAINER */
 #cal-wrap { max-width: 600px; }
 
-/* (C) PERIOD SELECTOR */
+
 #cal-date { display: flex; }
 #cal-mth, #cal-yr {
   box-sizing: border-box;
@@ -17,7 +19,7 @@ html{
   background-color: #000000;
 }
 
-/* (D) CALENDAR */
+
 #calendar {
   width: 200%;
   border-collapse: collapse;
@@ -58,7 +60,7 @@ html{
   color: #ff5d5d;
 }
 
-/* (E) ADD/EDIT EVENT */
+
 #cal-event {
   padding: 15px;
   margin-top: 20px;

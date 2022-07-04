@@ -1,3 +1,7 @@
+/**
+ * @author Bjoern
+ * Die login page inkl. benötigtem php für die erstellung eines kontos.
+ */
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,17 +45,17 @@
               
                 <?php
                 if(isset($_POST["submit"])){
-                  require("mysql.php");
-                  $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); //Username überprüfen
-                  $stmt->bindParam(":user", $_POST["username"]);
+                  require("01login.php");
+                  $stmt = $mysql->prepare("SELECT * FROM acc WHERE USERNAME = :email");
+                  $stmt->bindParam(":user", $_POST["email"]);
                   $stmt->execute();
                   $count = $stmt->rowCount();
                   if($count == 0){
 
                     if($_POST["pw"] == $_POST["pw2"]){
                       //User anlegen
-                      $stmt = $mysql->prepare("INSERT INTO accounts (USERNAME, PASSWORD) VALUES (:user, :pw)");
-                      $stmt->bindParam(":user", $_POST["username"]);
+                      $stmt = $mysql->prepare("INSERT INTO acc (EMAIL, PASSWORD) VALUES (:email, :passwort)");
+                      $stmt->bindParam(":user", $_POST["email"]);
                       $hash = password_hash($_POST["pw"], PASSWORD_BCRYPT);
                       $stmt->bindParam(":pw", $hash);
                       $stmt->execute();
