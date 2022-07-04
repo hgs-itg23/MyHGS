@@ -1,3 +1,8 @@
+        
+        /**
+         * @author Michael
+         * Parameter für email, password und passwordRetype
+         */
         function register(event){ 
 
             event.preventDefault(); 
@@ -11,39 +16,50 @@
             var passwordRetype = document.getElementById("rrp").value; 
 
  
-
+            /**
+             * If-Schleife wenn keine Email eingegeben wird
+             */
             if (email == ""){ 
 
-                alert("Email required."); 
+                alert("Email erforderlich."); 
 
                 return ; 
 
             } 
 
+            /**
+             * If-Schleife wenn kein Passwort eingegeben wird
+             */
             else if (password == ""){ 
 
-                alert("Password required."); 
+                alert("Passwort erforderlich."); 
 
                 return ; 
 
             } 
-
+            /**
+             * If-Schleife wenn kein wiederholtes Passwort eingegeben wird 
+             */
             else if (passwordRetype == ""){ 
 
-                alert("Password required."); 
+                alert("Passwort erforderlich."); 
 
                 return ; 
 
             } 
-
+            /**
+             * If-Schleife wenn die Passwörter nicht übereinstimmen
+             */
             else if ( password != passwordRetype ){ 
 
-                alert("Password don't match retype your Password."); 
+                alert("Passwort stimmt nicht überein."); 
 
                 return; 
 
             } 
-
+            /**
+             * If-Schleife wenn man sich erfolgreich angemeldet hat
+             */
             else if(emailArray.indexOf(email) == -1){ 
 
                 emailArray.push(email); 
@@ -52,7 +68,7 @@
 
  
 
-                alert(email + "  Thanks for registration. \nTry to login Now"); 
+                alert(email + "  Danke für die Registrierung. \nSie können sich jetzt einloggen"); 
 
  
 
@@ -63,10 +79,12 @@
                 document.getElementById("rrp").value=""; 
 
             } 
-
+            /**
+             * Meldung wenn Email bereits benutzt wird
+             */
             else{ 
 
-                alert(email + " is already register."); 
+                alert(email + " existiert schon."); 
 
                 return ; 
 
@@ -79,7 +97,9 @@
             event.preventDefault(); 
 
  
-
+            /**
+             * Parameter für email, password und i (Array von email)
+             */
             var email = document.getElementById("se").value; 
 
             var password = document.getElementById("sp").value; 
@@ -89,42 +109,50 @@
             var i = emailArray.indexOf(email); 
 
  
-
+            /**
+             * If-Schleife wenn keine Email im Login steht
+             */
             if(emailArray.indexOf(email) == -1){ 
 
                 if (email == ""){ 
 
-                    alert("Email required."); 
+                    alert("Email erforderlich."); 
 
                     return ; 
 
                 } 
 
-                alert("Email does not exist."); 
+                alert("Email existiert nicht."); 
 
                 return ; 
 
             } 
-
+            /**
+             * If-Schleife wenn Passwort nicht eingegeben wurde
+             */
             else if(passwordArray[i] != password){ 
 
                 if (password == ""){ 
 
-                    alert("Password required."); 
+                    alert("Password erforderlich."); 
 
                     return ; 
 
                 } 
-
-                alert("Password does not match."); 
+                /**
+                 * Meldung wenn Passwort nicht stimmt
+                 */
+                alert("Passwort stimmt nicht."); 
 
                 return ; 
 
             } 
 
             else { 
-
-                alert(email + " yor are login Now \n welcome to our website."); 
+                /**
+                 * Meldung wenn man sich eingeloggt hat
+                 */
+                alert(email + " Du bist eingeloggt \n Wilkommen auf unserer Website."); 
 
  
 
@@ -154,19 +182,19 @@
 
                 if (email == ""){ 
 
-                    alert("Email required."); 
+                    alert("Email erforderlich."); 
 
                     return ; 
 
                 } 
 
-                alert("Email does not exist."); 
+                alert("Email existiert nicht."); 
 
                 return ; 
 
             } 
 
-            alert("email is send to your email check it in 24hr. \n Thanks"); 
+            alert("überprüfen sie ihr Postfach. \n Danke"); 
 
             document.getElementById("fe").value ="";         
 
