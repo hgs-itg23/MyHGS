@@ -12,6 +12,9 @@ Packagename : de.hgs.itg23.MyHGS
 
 MyHGS is an online-calender, where you can document your Homework in, dates for classtests, Document and calculate your grades.
 
+# How do you use it?
+First of all you need to install Visual Studio code with the extentions "PHP Server" and "PHP Intelephense"
+
 # Programming Language
 
 We are coding the Website in `HTML` and `Java`
