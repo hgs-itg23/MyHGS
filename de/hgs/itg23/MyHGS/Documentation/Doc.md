@@ -31,3 +31,15 @@
 # 03.05.22
 - PHP Lernen [BM]
 - Java Persistence API lernen [MPM] 
+# 10.05.22
+- PHP Lernen [BM]
+# 17.05.22
+- PHP auf pc zum laufen brigen [BM]
+# 24.05.22
+- In externem ordner PHP ausprobieren [BM]
+# 31.05.22
+- Hintergrund von Login schreiben [BM]
+# 21.06.22
+- PHP wissen erweitern [BM]
+# 04.07.22
+- Über ferien geschriebenes und gelerntes php in projekt "implementiert" [BM]
