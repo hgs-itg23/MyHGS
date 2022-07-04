@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="uft-8">
@@ -38,19 +39,41 @@
             <div id="register" class="comm"> 
                 
               
+                <?php
+                if(isset($_POST["submit"])){
+                  require("mysql.php");
+                  $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); //Username überprüfen
+                  $stmt->bindParam(":user", $_POST["username"]);
+                  $stmt->execute();
+                  $count = $stmt->rowCount();
+                  if($count == 0){
 
+                    if($_POST["pw"] == $_POST["pw2"]){
+                      //User anlegen
+                      $stmt = $mysql->prepare("INSERT INTO accounts (USERNAME, PASSWORD) VALUES (:user, :pw)");
+                      $stmt->bindParam(":user", $_POST["username"]);
+                      $hash = password_hash($_POST["pw"], PASSWORD_BCRYPT);
+                      $stmt->bindParam(":pw", $hash);
+                      $stmt->execute();
+                      echo "Konto erstellt";
+                    } else {
+                      echo "Die Passwörter stimmen nicht überein";
+                    }
+                }
+                 ?>
  
+            <form action="register.php" method="post">
 
-                <input id="re" class="glow-on-hover" type="email" placeholder="Email" required/> 
+                <input id="re" class="glow-on-hover" type="email" name="email" placeholder="Email" required/> 
 
-                <input id="rp" class="glow-on-hover" type="password" placeholder="Password" required/> 
+                <input id="rp" class="glow-on-hover" type="password" name="password" placeholder="Password" required/> 
 
-                <input id="rrp" class="glow-on-hover" type="password" placeholder="repeat Password" required/> 
+                <input id="rrp" class="glow-on-hover" type="password" name="password2" placeholder="repeat Password" required/> 
 
                 
 
-                <button class="glow-on-hover" type="button">SUBMIT</button>
-
+                <button class="glow-on-hover" type="submit">SUBMIT</button>
+            </form>
 
 
  
