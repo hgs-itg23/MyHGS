@@ -41,5 +41,7 @@
 - Hintergrund von Login schreiben [BM]
 # 21.06.22
 - PHP wissen erweitern [BM]
+# 03.07.22
+- Rechner mit Java hinzugefügt [MPM]
 # 04.07.22
 - Über ferien geschriebenes und gelerntes php in projekt "implementiert" [BM]
